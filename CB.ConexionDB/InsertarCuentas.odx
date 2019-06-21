@@ -1,0 +1,296 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="1978edfa-5a27-494f-a7dd-f8ee87617ac5" LowerBound="1.1" HigherBound="64.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="CB.ConexionDB" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="09b470b4-fd73-4e26-8af7-355a093ff545" ParentLink="Module_PortType" LowerBound="16.1" HigherBound="23.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata port type: " />
+            <om:Property Name="Name" Value="InserttbCuentaPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="32397b06-bbb2-447d-b9e1-8cab41a0033b" ParentLink="PortType_OperationDeclaration" LowerBound="18.1" HigherBound="22.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata operation: " />
+                <om:Property Name="Name" Value="InserttbCuenta" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="f628a65f-4d31-4afb-ad4e-16b126883879" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="20.13" HigherBound="20.34">
+                    <om:Property Name="Ref" Value="CB.ConexionDB.InserttbCuentaRequest" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="5c7eead3-3eab-4096-9145-b68f5fa51274" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="20.36" HigherBound="20.58">
+                    <om:Property Name="Ref" Value="CB.ConexionDB.InserttbCuentaResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="e670063e-d895-4c9e-9103-fe43037a7545" ParentLink="Module_PortType" LowerBound="23.1" HigherBound="30.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CuentaReqPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="eeb7e03c-c360-4e28-8fae-a63079e69177" ParentLink="PortType_OperationDeclaration" LowerBound="25.1" HigherBound="29.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="3ab670c1-0a46-4ab1-82bf-456b9dcb1082" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="27.13" HigherBound="27.21">
+                    <om:Property Name="Ref" Value="CB.ConexionDB.CuentaRq" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="28d3c380-355c-4889-b51d-9299fc62626c" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="InserttbCuentaRequest" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="6f6954cd-b2ab-46ab-b14b-4a1311687f77" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="CB.ConexionDB.InserttbCuentaService_v1.CuentasReq" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="62aaa104-65f6-4fc7-815b-2d9c7d74322e" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="InserttbCuentaResponse" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="35fb6f19-791c-4500-abfb-37a6c2510209" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="CB.ConexionDB.InserttbCuentaService_v1.CuentasResp" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="31fa8406-b75b-4259-b2fa-67eaeeb0d0ba" ParentLink="Module_MessageType" LowerBound="12.1" HigherBound="16.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CuentaRq" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="0e6a13a5-b0ec-423e-afd8-ecc77449e50b" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="ClassName" Value="CB.ConexionDB.CuentaReq" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Body" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="5c6eb2fa-4f59-4570-948c-34a75a4450a9" ParentLink="Module_ServiceDeclaration" LowerBound="30.1" HigherBound="63.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="InsertarCuentas" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="ServiceBody" OID="043c02a9-eee6-440f-b4f4-952697ef9f9e" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="3ada43bb-77f9-4a65-8b05-099c5447d07f" ParentLink="ServiceBody_Statement" LowerBound="42.1" HigherBound="44.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="CuentaReqPort" />
+                    <om:Property Name="MessageName" Value="CuentaReqMsj" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Rcv_CuentaReq" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="08f2fd6a-02b7-4edd-bc14-ade03d0195e6" ParentLink="ServiceBody_Statement" LowerBound="44.1" HigherBound="61.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_1" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Construct" OID="78de6865-0198-4bc2-963e-5f4a42c76d61" ParentLink="ComplexStatement_Statement" LowerBound="49.1" HigherBound="55.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Construct_DBCuentaReq" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="32f8cb71-949f-438a-b750-5834acee23a9" ParentLink="ComplexStatement_Statement" LowerBound="52.1" HigherBound="54.1">
+                            <om:Property Name="ClassName" Value="CB.ConexionDB.CuentaReq_CuentaRerDB" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transform_DBCuentaReq" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="e5d44c09-5832-4388-9e97-20bd23144840" ParentLink="Transform_InputMessagePartRef" LowerBound="53.99" HigherBound="53.116">
+                                <om:Property Name="MessageRef" Value="CuentaReqMsj" />
+                                <om:Property Name="PartRef" Value="Body" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="ec2ae79f-2309-4857-b645-73a31a762980" ParentLink="Transform_OutputMessagePartRef" LowerBound="53.36" HigherBound="53.58">
+                                <om:Property Name="MessageRef" Value="DbCuentaReq" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="ef412b63-411d-4c38-92a7-7121d30fa57f" ParentLink="Construct_MessageRef" LowerBound="50.31" HigherBound="50.42">
+                            <om:Property Name="Ref" Value="DbCuentaReq" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="2e86cfb8-aec3-4f25-906e-3a46482c9093" ParentLink="ComplexStatement_Statement" LowerBound="55.1" HigherBound="57.1">
+                        <om:Property Name="PortName" Value="DBCuentaPort" />
+                        <om:Property Name="MessageName" Value="DbCuentaReq" />
+                        <om:Property Name="OperationName" Value="InserttbCuenta" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send_DBCuentaReq" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="8377e668-e3d1-4f4e-937d-a3e48fdbab36" ParentLink="ComplexStatement_Statement" LowerBound="57.1" HigherBound="59.1">
+                        <om:Property Name="Activate" Value="False" />
+                        <om:Property Name="PortName" Value="DBCuentaPort" />
+                        <om:Property Name="MessageName" Value="DbCuentaRespMsj" />
+                        <om:Property Name="OperationName" Value="InserttbCuenta" />
+                        <om:Property Name="OperationMessageName" Value="Response" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Receive_DBCuentaResp" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="f7aa90ba-c6f0-4f99-86f6-e119628bfefa" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="33.1" HigherBound="35.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="CB.ConexionDB.CuentaReqPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CuentaReqPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="0f9f43eb-f8fd-4158-ae80-64d060e615ac" ParentLink="PortDeclaration_CLRAttribute" LowerBound="33.1" HigherBound="34.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="0e571fee-e68f-4446-b6b9-88981324fcb5" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="35.1" HigherBound="37.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="12" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="CB.ConexionDB.InserttbCuentaPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DBCuentaPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="1efb8683-c064-4e61-a132-6c0c5f709340" ParentLink="PortDeclaration_CLRAttribute" LowerBound="35.1" HigherBound="36.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="7ac8e26f-7b84-4819-aac9-9203b88325ff" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="37.1" HigherBound="38.1">
+                <om:Property Name="Type" Value="CB.ConexionDB.CuentaRq" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CuentaReqMsj" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="d391fff1-e027-4772-ba50-5a4f9290b315" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="38.1" HigherBound="39.1">
+                <om:Property Name="Type" Value="CB.ConexionDB.InserttbCuentaRequest" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DbCuentaReq" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="a1c57e9e-65cf-4f92-980c-b313121e0fd6" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="39.1" HigherBound="40.1">
+                <om:Property Name="Type" Value="CB.ConexionDB.InserttbCuentaResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DbCuentaRespMsj" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module CB.ConexionDB
+{
+    internal messagetype InserttbCuentaRequest
+    {
+        body InserttbCuentaService_v1.CuentasReq parameters;
+    };
+    internal messagetype InserttbCuentaResponse
+    {
+        body InserttbCuentaService_v1.CuentasResp parameters;
+    };
+    internal messagetype CuentaRq
+    {
+        body CuentaReq Body;
+    };
+    internal porttype InserttbCuentaPortType
+    {
+        requestresponse InserttbCuenta
+        {
+            InserttbCuentaRequest, InserttbCuentaResponse
+        };
+    };
+    internal porttype CuentaReqPortType
+    {
+        oneway Operation_1
+        {
+            CuentaRq
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service InsertarCuentas
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements CuentaReqPortType CuentaReqPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses InserttbCuentaPortType DBCuentaPort;
+        message CuentaRq CuentaReqMsj;
+        message InserttbCuentaRequest DbCuentaReq;
+        message InserttbCuentaResponse DbCuentaRespMsj;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3ada43bb-77f9-4a65-8b05-099c5447d07f")]
+            activate receive (CuentaReqPort.Operation_1, CuentaReqMsj);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("08f2fd6a-02b7-4edd-bc14-ade03d0195e6")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("78de6865-0198-4bc2-963e-5f4a42c76d61")]
+                    construct DbCuentaReq
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("32f8cb71-949f-438a-b750-5834acee23a9")]
+                        transform (DbCuentaReq.parameters) = CB.ConexionDB.CuentaReq_CuentaRerDB (CuentaReqMsj.Body);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("2e86cfb8-aec3-4f25-906e-3a46482c9093")]
+                    send (DBCuentaPort.InserttbCuenta, DbCuentaReq);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("8377e668-e3d1-4f4e-937d-a3e48fdbab36")]
+                    receive (DBCuentaPort.InserttbCuenta, DbCuentaRespMsj);
+                }
+            }
+        }
+    }
+}
+

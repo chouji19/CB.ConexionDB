@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:tns="htttp://EsquemaCuentas/v1" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="htttp://EsquemaCuentas/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CuentasReq">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:updategram="urn:schemas-microsoft-com:xml-updategram" updategram:Prefix="updg" minOccurs="1" maxOccurs="unbounded" name="sync">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element updategram:Prefix="updg" minOccurs="0" maxOccurs="unbounded" name="after">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="tbCuenta">
+                      <xs:complexType>
+                        <xs:attribute name="NombreCliente" type="xs:string" />
+                        <xs:attribute name="TipoCuenta" type="xs:string" />
+                        <xs:attribute name="NumeroCuenta" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CuentasResp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Success" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
